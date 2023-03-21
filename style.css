@@ -21,14 +21,11 @@ body {
 }
 
 main {
-	border: 1px solid black;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
 	background-color: white;
 	border-radius: 5px;
-	/* position: relative; */
 }
 
 header {
@@ -44,20 +41,91 @@ header {
 
 header h2 {
 	text-shadow: -1px 1px rgba(255, 255, 255, 0.37);
+	cursor: default;
 }
 
 section {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 50%;
 	padding: 20px;
+	flex-direction: column;
+	gap: 25px;
 }
 
 footer {
-	/* position: absolute; */
 	height: auto;
-	/* bottom: 0; */
+	display: flex;
+	justify-content: space-between;
 	padding: 40px;
 	background-color: #2563eb;
 	border-top: 2px solid black;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-end;
+	cursor: default;
+}
+
+.socials h4 {
+	text-shadow: -1px 1px rgba(255, 255, 255, 0.37);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.socials img {
+	height: 25px;
+	cursor: pointer;
+}
+
+.first-footer-child {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	cursor: default;
+}
+
+.first-footer-child h3 {
+	text-shadow: -1px 1px rgba(255, 255, 255, 0.37);
+}
+
+.first-footer-child a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.first-info {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	gap: 15px;
+}
+
+.first-info div {
+	height: 200px;
+	width: 400px;
+}
+
+.info h2 {
+	text-shadow: -1px 1px 5px rgba(54, 54, 54, 0.37);
+}
+
+.info {
+	border: 1px solid lightgray;
+	padding: 15px;
+	box-shadow: -2px 2px 5px gainsboro;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 1300px) {
+	.second-info {
+		width: 600px;
+	}
 }
